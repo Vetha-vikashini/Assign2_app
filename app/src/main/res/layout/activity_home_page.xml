@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+
+            android:id="@+id/top">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:src="@drawable/boy"
+                android:background="@drawable/back1"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="17dp"
+                android:fontFamily="@font/alger"
+                android:text="Hi, Mano" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/bell" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent"
+            android:orientation="horizontal"
+            android:layout_below="@id/top"
+            android:id="@+id/second"
+            android:elevation="20dp"
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:minHeight="48dp" />
+        </LinearLayout>
+        
+        
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second"
+            android:id="@+id/third">
+           <LinearLayout
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:orientation="horizontal"
+               android:padding="15dp">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:text="Beaches"
+                   android:textSize="17dp"
+                   android:layout_marginRight="20dp"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:text="Mountains"
+                   android:textSize="17dp"
+                   android:layout_marginRight="20dp"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:text="Lakes"
+                   android:textSize="17dp"
+                   android:layout_marginRight="20dp"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:text="Forest"
+                   android:textSize="17dp"
+                   android:layout_marginRight="20dp"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:text="Temple"
+                   android:textSize="17dp"
+                   android:layout_marginRight="20dp"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="20dp"
+                   android:text="Island"
+                   android:textSize="17dp"
+                   android:layout_marginRight="20dp"/>
+               
+        </LinearLayout>
+    </HorizontalScrollView>
+        
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourth"
+            android:layout_below="@id/third"
+            android:layout_marginTop="20dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Today's\nOffers"
+                    android:fontFamily="@font/alger"
+                    android:textSize="25dp"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/img_7" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="190dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/offer"
+                    android:src="@drawable/img_8" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/fourth"
+           android:layout_marginTop="20dp">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Most\nViewd"
+                   android:fontFamily="@font/alger"
+                   android:textSize="25dp"
+                   android:padding="10dp"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="300dp"
+                       android:layout_height="190dp"
+                       android:src="@drawable/dubai" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Dubai"
+                       android:textSize="17dp"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="300dp"
+                       android:layout_height="190dp"
+                       android:src="@drawable/maldiv" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Maldives"
+                       android:textSize="17dp"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:layout_width="300dp"
+                       android:layout_height="190dp"
+                       android:src="@drawable/ganga" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="River Ganga"
+                       android:textSize="17dp"/>
+               </LinearLayout>
+
+
+
+
+
+           </LinearLayout>
+
+
+
+       </HorizontalScrollView>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
